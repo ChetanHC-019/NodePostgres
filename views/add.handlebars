@@ -1,0 +1,28 @@
+<section id="add" class="container">
+    <div class="form-wrap">
+      <h1>Add a Student</h1>
+      <form action="/student/add" method="POST">
+        <div class="input-group">
+          <label for="title">Student Name</label>
+          <input type="text" name="student_name" id="title" class="input-box"
+            maxlength="100" >
+        </div>
+        <div class="input-group">
+          <label for="technologies">Student Phone.no</label>
+          <input type="number" name="student_phone" id="technologies" class="input-box" 
+          maxlength="100" >
+        </div>
+        <div class="input-group">
+          <label for="budget">Student Address</label>
+            <textarea name="student_address" id="description" class="input-box"
+            rows="10"></textarea>
+          
+        </div>
+        <div class="input-group">
+          <label for="description">Student marks(out of 100)</label>
+          <input type="number" name="student_marks" id="budget" class="input-box">
+        </div>
+        <input type="submit" value="Add Student" class="btn btn-reverse">
+      </form>
+    </div>
+  </section>

@@ -1,0 +1,18 @@
+  <div>
+    <button id="button02" onclick="deleteAll()">Delete all Students</button>
+  </div> 
+<section id="gigs" class="container">
+    <h1>All students :</h1>
+    {{#each student}}
+      <div class="gig">
+      <h3>Id :{{id}}</h3>
+      <h3>Name :{{student_name}}</h3>
+      <h3>Phone number :{{student_phone}}</h3>
+      <h3>Address :{{ student_address}}</h3>
+      <h3>Marks : {{student_marks}}/100</h3>
+    </div>
+    {{else}}
+      <p>No student available</p>
+    {{/each}}
+    
+  </section>
